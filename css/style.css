@@ -1,0 +1,164 @@
+/* Importando as fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@400;700&display=swap');
+
+/* Resetando as margens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Background da página */
+body{
+    font-size: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(130deg, rgba(255,255,255,1) 0%, rgb(248, 243, 98) 100%);/* Efeito degradê */
+	background-size: 100% 100%;
+}
+
+/* Cabeçalho*/
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(247, 243, 129);
+}
+
+.header-logo{
+    height: 60px;
+}
+
+.header-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: black;
+    border: 2px solid #ffcf38;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.header-text:hover{
+    /* Faz com que troque a cor ao passar o mouse */
+    background-color: #ffcf38;
+    color: white;
+    font-weight: 700;
+    transition: 0.2s all;
+}
+
+
+/* Conteúdo pricipal*/
+.content{
+    border-top: 0.8px solid #ffcf38;
+    margin-bottom: 2px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-content-title{
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    font-size: 65px;
+    color: #3a3003;
+}
+
+.main-content-subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3a3003;
+}
+
+.main-content-subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.main-content-img{
+    padding-top: 50px;
+    height: 480px;
+}
+
+/* Conteúdo secundário */
+.second-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    padding: 50px;
+    padding-bottom: 40px;
+}
+
+.second-content-title{
+    border-top: 0.8px solid #ffcf38;
+    padding-top: 30px;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.second-content-text{
+    padding: 10px;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    max-width: 600px;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+/* Rodapé */
+.footer{
+    border-top: 0.8px solid #ffcf38;
+    margin-bottom: 2px;
+    padding: 10px;
+    background-color: rgb(247, 243, 129);
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color:#3a3003;
+}
+
+.footer-text1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+    color: #3a3003;
+}
+
+.footer-text2{
+    font-family: 'Bree Serif', serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color:#3a3003;
+}
+
+.footer-text2:hover{
+    color:#ffcf38;
+    transition: 0.2s all;
+}
