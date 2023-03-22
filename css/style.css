@@ -1,28 +1,42 @@
 /* Importando as fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@400;700&display=swap');
 
+/* Responsividade para aparelhos móveis */
+@media screen and (max-width: 560px){
+    .main-content-img{
+        height: 250px; /* Faz com que a imagem diminua de tamanho para dispositivos móveis */
+    }
+
+    .main-content{
+        padding: 50px; /* Cria uma distância entre as bordas para melhor leitura */
+    } 
+}
+
+@keyframes animation-text{
+    from {width: 0%;}
+    to {width: 310px;}
+
+}
+
 /* Resetando as margens */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
-/* Background da página */
 body{
     font-size: 100%;
-    background: rgb(255,255,255);
     background: linear-gradient(130deg, rgba(255,255,255,1) 0%, rgb(248, 243, 98) 100%);/* Efeito degradê */
 	background-size: 100% 100%;
 }
 
-/* Cabeçalho*/
 .header{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Row = horizontal, Column vertical */
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; /* Cria um espaço  */
     padding: 10px;
     background-color: rgb(247, 243, 129);
 }
@@ -49,8 +63,6 @@ body{
     transition: 0.2s all;
 }
 
-
-/* Conteúdo pricipal*/
 .content{
     border-top: 0.8px solid #ffcf38;
     margin-bottom: 2px;
@@ -61,6 +73,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .main-content-text{
@@ -83,17 +96,11 @@ body{
     color: #3a3003;
 }
 
-.main-content-subtitle{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-}
 .main-content-img{
     padding-top: 50px;
-    height: 480px;
+    height: 350px;
 }
 
-/* Conteúdo secundário */
 .second-content{
     display: flex;
     flex-direction: column;
@@ -105,9 +112,12 @@ body{
 }
 
 .second-content-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-top: 0.8px solid #ffcf38;
     padding-top: 30px;
-    align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -126,7 +136,6 @@ body{
     text-align: justify;
 }
 
-/* Rodapé */
 .footer{
     border-top: 0.8px solid #ffcf38;
     margin-bottom: 2px;
