@@ -12,12 +12,6 @@
     } 
 }
 
-@keyframes animation-text{
-    from {width: 0%;}
-    to {width: 310px;}
-
-}
-
 /* Resetando as margens */
 * {
     margin: 0;
